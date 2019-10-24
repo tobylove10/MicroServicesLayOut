@@ -1,0 +1,101 @@
+version: '2'
+services:
+   redis6379:
+      image: redis
+      container_name: redis6379
+      restart: always
+      ports:
+        - 6379:6379
+        - 16379:16379
+      volumes:
+        - /njpn/redis_cluster/6379/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6379/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6380:
+      image: redis
+      container_name: redis6380
+      restart: always
+      ports:
+        - 6380:6380
+        - 16380:16380
+      volumes:
+        - /njpn/redis_cluster/6380/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6380/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6381:
+      image: redis
+      container_name: redis6381
+      restart: always
+      ports:
+        - 6381:6381
+        - 16381:16381
+      volumes:
+        - /njpn/redis_cluster/6381/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6381/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6410:
+      image: redis
+      container_name: redis6410
+      restart: always
+      ports:
+        - 6410:6410
+        - 16410:16410
+      volumes:
+        - /njpn/redis_cluster/6410/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6410/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6411:
+      image: redis
+      container_name: redis6411
+      restart: always
+      ports:
+        - 6411:6411
+        - 16411:16411
+      volumes:
+        - /njpn/redis_cluster/6411/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6411/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6420:
+      image: redis
+      container_name: redis6420
+      restart: always
+      ports:
+        - 6420:6420
+        - 16420:16420
+      volumes:
+        - /njpn/redis_cluster/6420/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6420/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6421:
+      image: redis
+      container_name: redis6421
+      restart: always
+      ports:
+        - 6421:6421
+        - 16421:16421
+      volumes:
+        - /njpn/redis_cluster/6421/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6421/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6430:
+      image: redis
+      container_name: redis6430
+      restart: always
+      ports:
+        - 6430:6430
+        - 16430:16430
+      volumes:
+        - /njpn/redis_cluster/6430/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6430/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
+   redis6431:
+      image: redis
+      container_name: redis6431
+      restart: always
+      ports:
+        - 6431:6431
+        - 16431:16431
+      volumes:
+        - /njpn/redis_cluster/6431/conf/redis.conf:/usr/local/etc/redis/redis.conf
+        - /njpn/redis_cluster/6431/data:/data
+      command: redis-server /usr/local/etc/redis/redis.conf
